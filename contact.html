@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Contact | BS Studios</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-items">
+            <li>
+                <a href="./">Home</a>
+            </li>
+            <li style="display: none;">
+                <a href="./games">Games</a>
+            </li>
+            <li>
+                <a href="../about">About</a>
+            </li>
+            <li>
+                <a href="./">Contact</a>
+            </li>
+            <li>
+                <a href="https://benjamin.bsstudios.org/">Benjamin's Site</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="header">Contact Us</p>
+        <br>
+        <form class="form">
+            <div class="section name-section">
+                <div class="input">
+                    <input type="text" id="firstName" name="firstName" placeholder="Timothy" required>
+                    <label for="firstName" class="required">First Name <span class="req-indicator">*</span></label>
+                </div>
+                <div class="input">
+                    <input type="text" id="lastName" name="lastName" placeholder="Cubbins">
+                    <label for="lastName">Last Name</label>
+                </div>
+            </div>
+            <div class="section emailphone-section">
+                <div class="input">
+                    <input type="email" id="email" name="email" placeholder="timothy.cubbins@example.tld" required>
+                    <label for="email" class="required">Email <span class="req-indicator">*</span></label>
+                </div>
+                <div class="input">
+                    <input type="tel" id="phone" name="phone" placeholder="+1 123-456-7890">
+                    <label for="phone">Phone Number</label>
+                </div>
+            </div>
+            <div class="section">
+                <div class="input">
+                    <textarea id="message" name="message" placeholder="I DEMAND A REFUND!!!11" required></textarea>
+                    <label for="message" class="required">Message <span class="req-indicator">*</span></label>
+                </div>
+            </div>
+            <button class="submit-button" id="submit" onclick="addForm()">Send</button>
+        </form>
+    </div>
+    <script src="./scripts/contact.js"></script>
+</body>
+</html>

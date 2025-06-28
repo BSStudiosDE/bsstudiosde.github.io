@@ -1,0 +1,30 @@
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-entry {
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.news-entry .title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-entry .title {
+    margin-top: 2px;
+}
+
+.news-entry .date {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.news-entry .content {
+    margin-top: 0.5rem;
+}
